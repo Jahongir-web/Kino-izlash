@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>73-dars</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <h1 class="page-name">Kino izlash</h1>
+  <div class="container">
+    <div class="box">
+      <form class="js-movie-name-form forms" action="https://echo.htmlacademy.ru" method="POST">
+
+        <input class="movie-name-input input-group" aria-label="movie name" name="name" type="text" placeholder="Nomi bo'yicha izlash" required>
+
+        <button class="btn" type="submit">Izlash</button>
+
+      </form>
+
+      <ol class="movie-name-list list">
+
+      </ol>
+    </div>
+
+    <div class="box">
+      <form class="js-movie-genre-form forms" action="https://echo.htmlacademy.ru" method="POST">
+
+        <input class="movie-genre-input input-group" aria-label="movie genre" name="genre" type="text" placeholder="Janri bo'yicha izlash" required>
+
+        <button class="btn" type="submit">Izlash</button>
+
+      </form>
+
+      <ol class="movie-genre-list list">
+
+      </ol>
+    </div>
+
+    <div class="box">
+      <form class="js-movie-year-form forms" action="https://echo.htmlacademy.ru" method="POST">
+
+        <input class="movie-year-input input-group" aria-label="movie year" name="year" type="number" placeholder="Yili bo'yicha izlash" required>
+
+        <button class="btn" type="submit">Izlash</button>
+
+      </form>
+
+      <ol class="movie-year-list list">
+
+      </ol>
+    </div>
+
+
+
+
+  </div>
+
+
+  <template class="movie-template">
+    <li>
+      <h3>Nmae: <span class="movie-name">Titanic</span></h3>
+      <p>Genre: <span class="movie-genre">fantastic</span></p>
+      <p>Year: <span class="movie-year">1998</span></p>
+    </li>
+  </template>
+  <script src="js/kinolar.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
