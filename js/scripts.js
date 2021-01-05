@@ -29,6 +29,7 @@ elNameList.innerHTML = ``;
     return kino.title.includes(elNameInput.value);
   });
 
+  document.querySelector(`.total`).textContent = kinolarNames.length;
   console.log(kinolarNames);
 
   kinolarNames.forEach (function(movi) {
@@ -55,6 +56,7 @@ elGenreList.innerHTML = ``;
     return kino.genres.includes(elGenreInput.value);
   });
 
+  document.querySelector(`.total-genre`).textContent = kinolarGenre.length;
   console.log(kinolarGenre);
 
   kinolarGenre.forEach (function(movi) {
@@ -81,6 +83,7 @@ elYearList.innerHTML = ``;
     return kino.year === Number(elYearInput.value);
   });
 
+  document.querySelector(`.total-year`).textContent = kinolarYear.length;
   console.log(kinolarYear);
 
   kinolarYear.forEach (function(movi) {
